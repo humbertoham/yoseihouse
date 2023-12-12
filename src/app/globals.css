@@ -2,26 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  --maincolor: #F31E53;
+  scroll-behavior: smooth;
+
+ 
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.logo{
+  height: 50px;
+  width: auto;
+}
+
+.nav{
+  transition: all 0.3s ease-in-out;
+  color: black;
+  font-size: 1rem;
+  padding: 15px;
+  font-family: 'Noto Sans', sans-serif;
+}
+.nav:hover{
+  transition: all 0.1s ease-in-out;
+  background-color: #F31E53;
+  color: white;
+}
+
+.icon{
+  transition: all 0.1s ease-in-out;
+  height: 20px !important;
+  width: auto !important;
+  
+  display: inline !important;
+
+  
+
+}
+
+.icon:hover{
+  transition: all 0.1s ease-in-out;
+  color: #F31E53;
+}
+.iconfa{
+  transition: all 0.1s ease-in-out;
+    height: 30px !important;
+    width: auto !important;
+    margin: auto !important;
+
+}
+
+.iconfa:hoveR{
+  transition: all 0.1s ease-in-out;
+  color: #F31E53;
+}
+
+.foot{
+  background-color: #F31E53;
+  color: white;
+}
+
+.wpp{
+  width: auto;
+  height: 50px;
+}
+.banner{
+  overflow: hidden;
+}
+
+
+.butt{
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Noto Sans', sans-serif;
+    background-color: #F31E53;
+
+    padding: 15px;
   }
+.butt:hover{
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.banL{
+  position: absolute;
+  bottom: 0; /* Coloca la imagen en la esquina inferior */
+  right: 0;
+  width: 25%; /* Ajusta el ancho al 100% del contenedor */
+  transform: translateY(+50%); /* Desplaza la imagen hacia arriba en un 50% de su altura */
+  height: auto;
+  z-index: -10;
 }
